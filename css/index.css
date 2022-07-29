@@ -1,0 +1,172 @@
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Section */
+
+nav {
+  display: flex;
+  height: 8vh;
+  font-family: "Poppins";
+}
+nav .nav-items h5 {
+  font-size: 20px;
+}
+nav .nav-items h5:nth-child(1) {
+  color: #fe5e35;
+  font-weight: bold;
+}
+nav .nav-items {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav img {
+  flex: 1;
+}
+
+/* Hero Section */
+
+.left-section {
+  position: absolute;
+  top: 15%;
+  left: 13%;
+}
+.left-section h3 {
+  font-size: 35px;
+  font-family: "Poppins";
+}
+.left-section h3 img {
+  width: 9%;
+}
+
+.left-section h1 {
+  font-size: 55px;
+  font-family: "Fredoka One";
+  letter-spacing: 5px;
+}
+
+.sub-headlines {
+  position: relative;
+  top: 40px;
+  right: 20px;
+}
+.sub-headline {
+  position: relative;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: "Poppins";
+}
+.sub-headline > img {
+  position: relative;
+  height: 40px;
+  background-color: #fe5e35;
+  border-radius: 200px;
+  padding: 8px;
+}
+.text {
+  position: absolute;
+  top: 110%;
+  right: 50px;
+  opacity: 0.3;
+}
+.action-btns {
+  position: absolute;
+  top: 130%;
+}
+.action-btn {
+  font-size: 20px;
+  margin: 20px 10px;
+  padding: 15px 20px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  background-color: #fe5e35;
+}
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.discount {
+  position: absolute;
+  height: 150px;
+  z-index: 2;
+  bottom: 210px;
+  left: 820px;
+}
+.discount-content {
+  position: absolute;
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  bottom: 270px;
+  right: 710px;
+  line-height: 30px;
+}
+.discount-content h4 {
+  font-size: 15px;
+  color: #fff;
+  position: relative;
+  left: 160px;
+  top: 35px;
+}
+.discount-content h1 {
+  font-size: 45px;
+  font-family: "Fredoka One";
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  left: 167px;
+  top: 25px;
+}
+.headphone-div img:last-child {
+  position: relative;
+  height: 450px;
+  top: 5px;
+  left: 350px;
+}
+.dots {
+  position: relative;
+  top: 5px;
+  left: 350px;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+.dots .dot {
+  margin: 0px 20px;
+  height: 30px;
+  width: 30px;
+  border-radius: 40px;
+}
+.yellow-dot {
+  background-color: #f9e10a;
+}
+.tomato-dot {
+  background-color: #ff6347;
+}
+.black-dot {
+  background-color: #000;
+}
+.right-section button {
+  background-color: #fe5e35;
+  color: #fff;
+  font-size: 23px;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  position: relative;
+  left: 350px;
+  top: 30px;
+}
