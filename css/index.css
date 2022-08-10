@@ -1,172 +1,276 @@
 * {
-  margin: 10px;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-/* Navbar Section */
+body {
+  max-width: 80rem;
+  margin: 30px auto;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*  Navbar start  */
 
 nav {
   display: flex;
-  height: 8vh;
-  font-family: "Poppins";
-}
-nav .nav-items h5 {
-  font-size: 20px;
-}
-nav .nav-items h5:nth-child(1) {
-  color: #fe5e35;
-  font-weight: bold;
-}
-nav .nav-items {
-  display: flex;
-  flex: 1;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
-nav img {
-  flex: 1;
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 300px;
 }
 
-/* Hero Section */
+.nav-item {
+  margin: 0 30px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 200;
+}
 
-.left-section {
-  position: absolute;
-  top: 15%;
-  left: 13%;
+.nav-item.active-item {
+  color: #fe5e35;
+  font-weight: 700;
+}
+
+.menu-icon {
+  display: none;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Intro Section */
+.intro-section {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.intro-section .left-section {
+  padding-top: 50px;
+  width: 100%;
 }
 .left-section h3 {
-  font-size: 35px;
-  font-family: "Poppins";
+  font-size: 36px;
 }
+
 .left-section h3 img {
-  width: 9%;
+  width: 8%;
 }
 
 .left-section h1 {
+  font-family: "Fredoka One", sans-serif;
   font-size: 55px;
-  font-family: "Fredoka One";
-  letter-spacing: 5px;
+  padding-top: 10px;
+  font-weight: 500;
 }
 
 .sub-headlines {
-  position: relative;
-  top: 40px;
-  right: 20px;
+  padding: 30px 50px;
 }
+
 .sub-headline {
-  position: relative;
-  left: 10px;
   display: flex;
   align-items: center;
-  margin-top: 20px;
-  font-size: 24px;
-  font-family: "Poppins";
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 25px;
 }
-.sub-headline > img {
-  position: relative;
-  height: 40px;
+
+.sub-headline img {
+  margin-right: 20px;
   background-color: #fe5e35;
-  border-radius: 200px;
-  padding: 8px;
+  border-radius: 50px;
+  height: 30px;
+  padding: 5px;
 }
-.text {
-  position: absolute;
-  top: 110%;
-  right: 50px;
-  opacity: 0.3;
+
+.left-section .text {
+  font-size: 14px;
+  opacity: 0.5;
 }
-.action-btns {
-  position: absolute;
-  top: 130%;
+
+.left-section .action-btns {
+  margin-top: 46px;
 }
-.action-btn {
-  font-size: 20px;
-  margin: 20px 10px;
-  padding: 15px 20px;
-  border-radius: 25px;
+
+.left-section .action-btn {
+  background-color: #fe5e35;
+  color: #ffffff;
+  border-radius: 30px;
   border: none;
-  color: white;
-  background-color: #fe5e35;
+  padding: 15px 30px;
+  font-size: 20px;
+  margin-right: 20px;
 }
+
 .right-section {
   display: flex;
   flex-direction: column;
-  justify-content: end;
   align-items: center;
+  margin-right: 120px;
 }
+
+.headphone-div {
+  position: relative;
+}
+
 .discount {
   position: absolute;
-  height: 150px;
-  z-index: 2;
-  bottom: 205px;
-  left: 824px;
+  left: -5%;
+  bottom: 10%;
+  height: 130px;
 }
+
 .discount-content {
   position: absolute;
-  font-family: "Poppins";
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  bottom: 270px;
-  right: 710px;
-  line-height: 30px;
+  left: 1%;
+  bottom: 19%;
+  font-family: "Fredoka One", sans-serif;
+  color: #ffffff;
+  text-align: center;
 }
+
 .discount-content h4 {
   font-size: 15px;
-  color: #fff;
-  position: relative;
-  left: 160px;
-  top: 35px;
+  font-weight: normal;
 }
+
 .discount-content h1 {
-  font-size: 45px;
-  font-family: "Fredoka One";
-  font-weight: 500;
-  color: #fff;
-  position: relative;
-  left: 167px;
-  top: 25px;
+  font-size: 35px;
+  font-weight: normal;
 }
-.headphone-div img:last-child {
-  position: relative;
-  height: 450px;
-  top: 5px;
-  left: 350px;
+
+.headphone-div img:nth-child(3) {
+  height: 420px;
 }
+
 .dots {
-  position: relative;
-  top: 5px;
-  left: 350px;
   display: flex;
-  flex-direction: row;
-  z-index: 2;
+  justify-content: space-between;
+  width: 35%;
+  padding: 10px 0;
 }
+
 .dots .dot {
-  margin: 0px 20px;
-  height: 30px;
-  width: 30px;
-  border-radius: 40px;
+  height: 26px;
+  width: 26px;
+  border-radius: 13px;
 }
-.yellow-dot {
-  background-color: #f9e10a;
+
+.dot.yellow-dot {
+  background-color: #f7cd2e;
 }
-.tomato-dot {
-  background-color: #ff6347;
-}
-.black-dot {
-  background-color: #000;
-}
-.right-section button {
+
+.dot.tomato-dot {
   background-color: #fe5e35;
-  color: #fff;
-  font-size: 23px;
-  padding: 15px 30px;
-  border-radius: 50px;
-  border: none;
-  position: relative;
-  left: 350px;
-  top: 30px;
 }
+
+.dot.black-dot {
+  background-color: #000000;
+}
+
+.right-section .action-btn {
+  background-color: #fe5e35;
+  color: #ffffff;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 25px;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 2% 3%;
+  }
+  img[alt="logo"] {
+    height: 40px;
+  }
+  .nav-items {
+    margin-left: 70px;
+  }
+  .nav-item {
+    margin: 0 20px;
+    font-size: 18px;
+  }
+  img[alt="actions"] {
+    margin-left: 20px;
+  }
+  .intro-section {
+    padding-bottom: 0;
+  }
+  .sub-headlines {
+    padding: 20px 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav-items {
+    display: none;
+  }
+  .menu-icon {
+    display: inline-block;
+  }
+  .intro-section {
+    flex-direction: column-reverse;
+  }
+  img[alt="actions"] {
+    display: none;
+  }
+  .right-section {
+    margin-left: 150px;
+  }
+  .headphone-div img:nth-child(3) {
+    height: 380px;
+  }
+  .dots .dot {
+    height: 22px;
+    width: 22px;
+    border-radius: 11px;
+  }
+  .right-section .action-btn {
+    padding: 8px 14px;
+    font-size: 16px;
+  }
+  .left-section .action-btns {
+    margin-top: 30px;
+  }
+  .left-section .action-btn {
+    padding: 8px 14px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .headphone-div img:nth-child(3) {
+    height: 320px;
+  }
+  .discount {
+    left: -5%;
+    height: 100px;
+  }
+  .discount-content {
+    position: absolute;
+    left: 1%;
+  }
+  .discount-content h4 {
+    font-size: 10px;
+  }
+  .discount-content h1 {
+    font-size: 30px;
+  }
+  .dots {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+ }
