@@ -10,7 +10,7 @@
 
 # Live Project 7 : Product Home Page
 
-## Project 7: [Live Link]()
+## Project 7: [Live Link](https://live-project-7-fs-js.netlify.app/)
 
 -   Skills Gained in this project.
     - Learned how to position different elements on the top of each other.
